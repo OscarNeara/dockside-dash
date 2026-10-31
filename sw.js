@@ -2,27 +2,25 @@
 // first visit. The build fills in VERSION and PRECACHE (see vite.config.ts); on the dev server it is never started.
 
 /** Changes with every build that changes a file, so old caches get dropped. */
-const VERSION = 'c6b39a533aba';
+const VERSION = '0dde6591c339';
 
 /** Files stored when the worker installs, as URLs relative to this file. */
 const PRECACHE = [
-  "assets/install-DpL3peWB.css",
-  "assets/install-PgrP7d0U.js",
+  "assets/install-BeyBeANl.css",
+  "assets/install-Cm6a0Vpp.js",
   "assets/nunito-latin-400-normal-r8SDr6Up.woff2",
   "assets/nunito-latin-600-normal-Br8yIETf.woff2",
   "assets/nunito-latin-700-normal-Dort48En.woff2",
   "assets/nunito-latin-800-normal-Dz8SOQK_.woff2",
-  "assets/play-C0LmhjdH.js",
-  "assets/play-P1TnNswP.css",
-  "assets/playfair-display-latin-400-italic-LeeEXsx5.woff2",
-  "assets/playfair-display-latin-600-italic-Bvp5b4iR.woff2",
-  "assets/playfair-display-latin-600-normal-CZLGqjJe.woff2",
+  "assets/play-Cw6VXfi0.css",
+  "assets/play-wnn7BgNH.js",
+  "assets/playfair-display-latin-400-normal-CFtfchNt.woff2",
   "assets/playfair-display-latin-700-italic-CB566L-e.woff2",
   "assets/playfair-display-latin-700-normal-CuDiGg7c.woff2",
   "assets/playfair-display-latin-800-italic-PVABM-JB.woff2",
   "assets/playfair-display-latin-800-normal-lwhkvH_6.woff2",
-  "assets/site-CrcvcoDo.js",
-  "assets/site-DFDjgtcG.css",
+  "assets/site-Cqkq57QF.css",
+  "assets/site-DLMOxUnm.js",
   "icons/apple-touch-icon.png",
   "icons/favicon-32.png",
   "icons/favicon.svg",
