@@ -1,0 +1,24 @@
+{
+  "id": "./play/",
+  "name": "Dockside Dash",
+  "short_name": "Dockside",
+  "description": "A pop-up storybook runner. Help Berla run fresh matcha through a royal park and toss a cup to everyone who waves.",
+  "lang": "en",
+  "start_url": "./play/",
+  "scope": "./",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone"],
+  "orientation": "landscape",
+  "background_color": "#fffaf1",
+  "theme_color": "#f6cfa6",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "screenshots": [
+    { "src": "shots/run.webp", "sizes": "1280x720", "type": "image/webp", "form_factor": "wide", "label": "Berla runs down the lakeside promenade" },
+    { "src": "shots/boats.webp", "sizes": "1280x720", "type": "image/webp", "form_factor": "wide", "label": "Canals, footbridges and customers to serve" }
+  ]
+}
