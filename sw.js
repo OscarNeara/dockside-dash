@@ -2,7 +2,7 @@
 // first visit. The build fills in VERSION and PRECACHE (see vite.config.ts); on the dev server it is never started.
 
 /** Changes with every build that changes a file, so old caches get dropped. */
-const VERSION = '5082acd6c1ef';
+const VERSION = 'a32638edc4de';
 
 /** Files stored when the worker installs, as URLs relative to this file. */
 const PRECACHE = [
@@ -12,8 +12,8 @@ const PRECACHE = [
   "assets/nunito-latin-600-normal-Br8yIETf.woff2",
   "assets/nunito-latin-700-normal-Dort48En.woff2",
   "assets/nunito-latin-800-normal-Dz8SOQK_.woff2",
-  "assets/play-B4j-6kN_.css",
-  "assets/play-D2FyPuHR.js",
+  "assets/play-Bhs0xojm.js",
+  "assets/play-P1TnNswP.css",
   "assets/playfair-display-latin-400-italic-LeeEXsx5.woff2",
   "assets/playfair-display-latin-600-italic-Bvp5b4iR.woff2",
   "assets/playfair-display-latin-600-normal-CZLGqjJe.woff2",
