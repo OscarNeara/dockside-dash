@@ -3,318 +3,826 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Dockside Dash: a storybook tea runner</title>
-    <meta name="description" content="Run fresh matcha through a pop-up storybook park and toss a cup to everyone who waves. Free to play in your browser, or add it to your phone and play offline." />
-    <meta name="theme-color" content="#f7c6c9" />
+    <title>Dockside Dash: a storybook of matcha deliveries</title>
+    <meta
+      name="description"
+      content="A storybook runner. Carry matcha along the lake and toss a cup to everyone who waves. Free in your browser, with no sign-up. Add it to your phone and it plays offline."
+    />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#8b2b48" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Dockside Dash" />
-    <meta property="og:description" content="A pop-up storybook runner. Run fresh matcha through a royal park and toss a cup to everyone who waves." />
+    <meta
+      property="og:description"
+      content="A storybook runner. Carry matcha along the lake and toss a cup to everyone who waves."
+    />
     <meta name="apple-mobile-web-app-title" content="Dockside" />
     <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="icon" href="./icons/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="./icons/favicon-32.png" sizes="32x32" type="image/png" />
     <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
-    <link rel="preload" href="./shots/hero.webp" as="image" type="image/webp" fetchpriority="high" />
-    <script type="module" crossorigin src="./assets/site-DLMOxUnm.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/install-Cm6a0Vpp.js">
-    <link rel="stylesheet" crossorigin href="./assets/install-BeyBeANl.css">
-    <link rel="stylesheet" crossorigin href="./assets/site-Cqkq57QF.css">
+    <link rel="preload" href="./shots/run.webp" as="image" type="image/webp" fetchpriority="high" />
+    <script type="module" crossorigin src="./assets/site-BZM7Tvj3.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/install-Dt0u-i1s.js">
+    <link rel="stylesheet" crossorigin href="./assets/install-wOrKMShS.css">
+    <link rel="stylesheet" crossorigin href="./assets/site-BG2H0o1_.css">
   </head>
   <body>
-    <header class="hero">
-      <div class="petals" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-      <div class="hero-inner wrap">
-        <div class="hero-copy">
-          <svg class="hero-crest" viewBox="0 0 64 64" aria-hidden="true">
+    <header class="cover">
+      <div class="cover-frame">
+        <div class="cover-title">
+          <svg class="crest" viewBox="0 0 64 64" aria-hidden="true">
             <circle cx="32" cy="32" r="30" fill="#fffaf0" stroke="#e8c062" stroke-width="2.4" />
-            <circle cx="32" cy="32" r="26.4" fill="none" stroke="#c99a45" stroke-width=".9" stroke-dasharray="1.6 1.6" />
-            <path d="M33.5 21c-2.2-2.8 2.2-3.8 0-6.6M39 22c-2.2-2.8 2.2-3.8 0-6.6" fill="none" stroke="#c99a45" stroke-width="1.6" stroke-linecap="round" />
+            <circle
+              cx="32"
+              cy="32"
+              r="26.4"
+              fill="none"
+              stroke="#c99a45"
+              stroke-width=".9"
+              stroke-dasharray="1.6 1.6"
+            />
+            <path
+              d="M33.5 21c-2.2-2.8 2.2-3.8 0-6.6M39 22c-2.2-2.8 2.2-3.8 0-6.6"
+              fill="none"
+              stroke="#c99a45"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            />
             <ellipse cx="32" cy="47.6" rx="17" ry="3.4" fill="#fffaf0" stroke="#4a3346" stroke-width="1.6" />
-            <path d="M45 32.4c4-.2 5.8 1.8 5.8 4.2 0 2.5-2.1 4.6-6.2 4.8" fill="none" stroke="#4a3346" stroke-width="2" stroke-linecap="round" />
-            <path d="M18.4 29.4h27.2v6.4c0 7.4-6 12.8-13.6 12.8s-13.6-5.4-13.6-12.8z" fill="#fffaf0" stroke="#4a3346" stroke-width="1.8" stroke-linejoin="round" />
+            <path
+              d="M45 32.4c4-.2 5.8 1.8 5.8 4.2 0 2.5-2.1 4.6-6.2 4.8"
+              fill="none"
+              stroke="#4a3346"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M18.4 29.4h27.2v6.4c0 7.4-6 12.8-13.6 12.8s-13.6-5.4-13.6-12.8z"
+              fill="#fffaf0"
+              stroke="#4a3346"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            />
             <ellipse cx="32" cy="29.6" rx="12.8" ry="2.6" fill="#7fb069" />
             <ellipse cx="32" cy="29.4" rx="13.6" ry="3" fill="none" stroke="#c99a45" stroke-width="1.4" />
-            <path d="M24 38.6c2.4 1.6 5.4 1.6 8 0" fill="none" stroke="#e8c062" stroke-width="1.4" stroke-linecap="round" />
-            <path d="M17.2 27.4c-3.4-.6-5.2-3.6-5.2-3.6s3.6-1.4 6.2.8M24.8 31c.4 3.4-1.8 6-1.8 6s-2.6-2.8-1.4-6" fill="#7fb76a" stroke="#4a3346" stroke-width="1.1" stroke-linejoin="round" />
+            <path
+              d="M24 38.6c2.4 1.6 5.4 1.6 8 0"
+              fill="none"
+              stroke="#e8c062"
+              stroke-width="1.4"
+              stroke-linecap="round"
+            />
+            <path
+              d="M17.2 27.4c-3.4-.6-5.2-3.6-5.2-3.6s3.6-1.4 6.2.8M24.8 31c.4 3.4-1.8 6-1.8 6s-2.6-2.8-1.4-6"
+              fill="#7fb76a"
+              stroke="#4a3346"
+              stroke-width="1.1"
+              stroke-linejoin="round"
+            />
             <circle cx="21" cy="26.4" r="5.8" fill="#ef7f9a" stroke="#4a3346" stroke-width="1.4" />
-            <path d="M21 23.2a3.2 3.2 0 1 0 3.2 3.2M21 24.6a1.8 1.8 0 1 1-1.8 1.8" fill="none" stroke="#b8405e" stroke-width="1.2" stroke-linecap="round" />
+            <path
+              d="M21 23.2a3.2 3.2 0 1 0 3.2 3.2M21 24.6a1.8 1.8 0 1 1-1.8 1.8"
+              fill="none"
+              stroke="#b8405e"
+              stroke-width="1.2"
+              stroke-linecap="round"
+            />
           </svg>
-          <p class="eyebrow">A pop-up storybook runner</p>
-          <h1 class="logo" aria-label="Dockside Dash">
-            <span class="logo-line is-small"><span class="logo-word" data-text="Dockside">Dockside</span></span>
-            <span class="logo-line is-big"><span class="logo-word" data-text="Dash">Dash</span></span>
+          <h1 class="logo">
+            <span class="logo-small">Dockside</span>
+            <span class="logo-big">Dash</span>
           </h1>
-          <p class="pitch">Help Berla run fresh matcha through a royal park that pops up from the page, and toss a cup to everyone who waves.</p>
-          <div class="cta">
-            <a class="btn btn-rose" href="./play/">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.4 4.8v14.4a1.4 1.4 0 0 0 2.2 1.2l10.8-7.2a1.4 1.4 0 0 0 0-2.4L9.6 3.6a1.4 1.4 0 0 0-2.2 1.2z" /></svg>
+          <svg
+            class="rule"
+            viewBox="0 0 240 12"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M4 6h100M136 6h100" stroke-width="1.5" />
+            <path d="M120 1.5 124.5 6 120 10.5 115.5 6z" fill="currentColor" stroke-width="1" />
+            <circle cx="109" cy="6" r="1.4" fill="currentColor" stroke="none" />
+            <circle cx="131" cy="6" r="1.4" fill="currentColor" stroke="none" />
+          </svg>
+          <p class="cover-sub">A storybook of matcha deliveries</p>
+        </div>
+
+        <figure class="cover-plate">
+          <img
+            src="./shots/run.webp"
+            width="1280"
+            height="720"
+            fetchpriority="high"
+            alt="Berla runs along the lakeside promenade with her basket of matcha, past flower stalls and a porter's cart."
+          />
+        </figure>
+
+        <div class="cover-actions">
+          <div class="actions">
+            <a class="btn btn-foil btn-big" href="./play/">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M7.4 4.8v14.4a1.4 1.4 0 0 0 2.2 1.2l10.8-7.2a1.4 1.4 0 0 0 0-2.4L9.6 3.6a1.4 1.4 0 0 0-2.2 1.2z"
+                />
+              </svg>
               Play now
             </a>
-            <button class="btn btn-cream" type="button" data-get-app>
-              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="3" fill="currentColor" fill-opacity=".12" /><path d="M12 7v7m-3-3 3 3 3-3M10 18.4h4" /></svg>
-              Get the app
+            <button class="btn btn-paper btn-big" type="button" data-get-app>
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.9"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="6.5" y="2.5" width="11" height="19" rx="2.4" fill="currentColor" fill-opacity=".14" />
+                <path d="M10.5 18.5h3" />
+                <path d="M12 7.2v6M9.6 11l2.4 2.4 2.4-2.4" />
+              </svg>
+              <span class="btn-label">Get the app</span>
             </button>
           </div>
-          <p class="note"><span>Free to play</span><span>No sign-up</span><span>Works offline</span></p>
+          <ul class="promises">
+            <li>Free</li>
+            <li>No sign-up</li>
+            <li>Plays offline</li>
+          </ul>
         </div>
-        <figure class="device">
-          <img src="./shots/hero.webp" width="1688" height="780" alt="Berla runs down the lakeside promenade with a basket of matcha while a porter pushes a flower cart." fetchpriority="high" />
-        </figure>
       </div>
-      <svg class="skyline" viewBox="0 -54 1440 274" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false"><g class="sk-back" fill="#cfe3bf"><circle cx="-4" cy="110" r="28"/><circle cx="51" cy="121" r="34"/><circle cx="111" cy="135" r="33"/><circle cx="179" cy="132" r="27"/><circle cx="238" cy="131" r="38"/><circle cx="294" cy="98" r="35"/><circle cx="362" cy="97" r="32"/><circle cx="411" cy="124" r="38"/><circle cx="473" cy="124" r="28"/><circle cx="546" cy="113" r="29"/><circle cx="603" cy="114" r="31"/><circle cx="651" cy="128" r="27"/><circle cx="724" cy="123" r="32"/><circle cx="782" cy="124" r="32"/><circle cx="846" cy="126" r="36"/><circle cx="901" cy="101" r="33"/><circle cx="965" cy="97" r="30"/><circle cx="1012" cy="106" r="32"/><circle cx="1073" cy="134" r="33"/><circle cx="1143" cy="113" r="37"/><circle cx="1208" cy="108" r="30"/><circle cx="1262" cy="118" r="34"/><circle cx="1327" cy="117" r="39"/><circle cx="1383" cy="108" r="27"/><circle cx="1443" cy="103" r="40"/><circle cx="1496" cy="109" r="31"/><rect x="0" y="126" width="1440" height="70"/></g><g class="sk-back" fill="#e9e0f4" stroke="#4a3346" stroke-opacity=".18" stroke-width="1.2"><rect x="1040" y="46" width="150" height="150"/><path d="M1060 46a55 55 0 0 1 110 0z"/><rect x="1108" y="-36" width="14" height="30"/><circle cx="1115" cy="-40" r="6"/></g><g class="sk-pop" style="--d:0.10s" stroke-linejoin="round"><rect x="-20" y="26" width="118" height="170" fill="#f6c9cf"/><path d="M-22 26l12 -26h98l12 26z" fill="#9fb0c9"/><rect x="28" y="6" width="22" height="16" rx="3" fill="#fffaf0"/><rect x="-24" y="24" width="126" height="8" fill="#fffaf0"/><path d="M0.5 72v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M59.5 72v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M0.5 108v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><rect x="-4.5" y="106" width="28" height="5" rx="2" fill="#4a3346" fill-opacity=".55"/><g fill="#ef7f9a"><circle cx="2.5" cy="105" r="2.6"/><circle cx="9.5" cy="104" r="2.6"/><circle cx="16.5" cy="105" r="2.6"/></g><path d="M59.5 108v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><rect x="54.5" y="106" width="28" height="5" rx="2" fill="#4a3346" fill-opacity=".55"/><g fill="#ef7f9a"><circle cx="61.5" cy="105" r="2.6"/><circle cx="68.5" cy="104" r="2.6"/><circle cx="75.5" cy="105" r="2.6"/></g><path d="M0.5 144v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M59.5 144v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M27 196v-30a12 12 0 0 1 24 0v30z" fill="#c2405f" stroke="#fffaf0" stroke-width="3"/><rect x="-20" y="26" width="118" height="170" fill="none" stroke="#4a3346" stroke-opacity=".28" stroke-width="1.5"/></g><g class="sk-pop" style="--d:0.17s" stroke-linejoin="round"><rect x="98" y="68" width="132" height="128" fill="#d9c8ef"/><path d="M94 68L164 42L234 68z" fill="#fffaf0"/><circle cx="164" cy="59" r="5" fill="#e8c062"/><rect x="94" y="66" width="140" height="8" fill="#fffaf0"/><path d="M111.0 114v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M155.0 114v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M199.0 114v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M111.0 150v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M155.0 150v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M199.0 150v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M152 196v-30a12 12 0 0 1 24 0v30z" fill="#6f86c2" stroke="#fffaf0" stroke-width="3"/><path d="M102.0 138h20.7v12a10.3 10.3 0 0 1 -20.7 0z" fill="#f08da8"/><path d="M122.7 138h20.7v12a10.3 10.3 0 0 1 -20.7 0z" fill="#fff3e6"/><path d="M143.3 138h20.7v12a10.3 10.3 0 0 1 -20.7 0z" fill="#f08da8"/><path d="M164.0 138h20.7v12a10.3 10.3 0 0 1 -20.7 0z" fill="#fff3e6"/><path d="M184.7 138h20.7v12a10.3 10.3 0 0 1 -20.7 0z" fill="#f08da8"/><path d="M205.3 138h20.7v12a10.3 10.3 0 0 1 -20.7 0z" fill="#fff3e6"/><rect x="98" y="68" width="132" height="128" fill="none" stroke="#4a3346" stroke-opacity=".28" stroke-width="1.5"/></g><g class="sk-pop" style="--d:0.24s" stroke-linejoin="round"><rect x="230" y="54" width="118" height="142" fill="#c8e8d6"/><rect x="226" y="40" width="126" height="14" fill="#fffaf0"/><rect x="236" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="248" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="260" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="272" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="284" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="296" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="308" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="320" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="332" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="226" y="52" width="126" height="8" fill="#fffaf0"/><path d="M250.5 100v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M309.5 100v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M250.5 136v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><rect x="245.5" y="134" width="28" height="5" rx="2" fill="#4a3346" fill-opacity=".55"/><g fill="#ef7f9a"><circle cx="252.5" cy="133" r="2.6"/><circle cx="259.5" cy="132" r="2.6"/><circle cx="266.5" cy="133" r="2.6"/></g><path d="M309.5 136v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><rect x="304.5" y="134" width="28" height="5" rx="2" fill="#4a3346" fill-opacity=".55"/><g fill="#ef7f9a"><circle cx="311.5" cy="133" r="2.6"/><circle cx="318.5" cy="132" r="2.6"/><circle cx="325.5" cy="133" r="2.6"/></g><path d="M277 196v-30a12 12 0 0 1 24 0v30z" fill="#7fb069" stroke="#fffaf0" stroke-width="3"/><rect x="230" y="54" width="118" height="142" fill="none" stroke="#4a3346" stroke-opacity=".28" stroke-width="1.5"/></g><g class="sk-pop" style="--d:0.31s" stroke-linejoin="round"><rect x="348" y="54" width="132" height="142" fill="#fbeedb"/><path d="M346 54l12 -26h112l12 26z" fill="#9fb0c9"/><rect x="403" y="34" width="22" height="16" rx="3" fill="#fffaf0"/><rect x="344" y="52" width="140" height="8" fill="#fffaf0"/><path d="M361.0 100v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M405.0 100v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M449.0 100v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M361.0 136v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M405.0 136v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M449.0 136v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M402 196v-30a12 12 0 0 1 24 0v30z" fill="#9b86d6" stroke="#fffaf0" stroke-width="3"/><path d="M352.0 138h20.7v12a10.3 10.3 0 0 1 -20.7 0z" fill="#f08da8"/><path d="M372.7 138h20.7v12a10.3 10.3 0 0 1 -20.7 0z" fill="#fff3e6"/><path d="M393.3 138h20.7v12a10.3 10.3 0 0 1 -20.7 0z" fill="#f08da8"/><path d="M414.0 138h20.7v12a10.3 10.3 0 0 1 -20.7 0z" fill="#fff3e6"/><path d="M434.7 138h20.7v12a10.3 10.3 0 0 1 -20.7 0z" fill="#f08da8"/><path d="M455.3 138h20.7v12a10.3 10.3 0 0 1 -20.7 0z" fill="#fff3e6"/><rect x="348" y="54" width="132" height="142" fill="none" stroke="#4a3346" stroke-opacity=".28" stroke-width="1.5"/></g><g class="sk-pop" style="--d:0.38s" stroke-linejoin="round"><rect x="480" y="26" width="160" height="170" fill="#c6dcf2"/><path d="M476 26L560 0L644 26z" fill="#fffaf0"/><circle cx="560" cy="17" r="5" fill="#e8c062"/><rect x="476" y="24" width="168" height="8" fill="#fffaf0"/><path d="M491.0 72v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M531.0 72v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M571.0 72v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M611.0 72v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M491.0 108v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><rect x="486.0" y="106" width="28" height="5" rx="2" fill="#4a3346" fill-opacity=".55"/><g fill="#ef7f9a"><circle cx="493.0" cy="105" r="2.6"/><circle cx="500.0" cy="104" r="2.6"/><circle cx="507.0" cy="105" r="2.6"/></g><path d="M531.0 108v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><rect x="526.0" y="106" width="28" height="5" rx="2" fill="#4a3346" fill-opacity=".55"/><g fill="#ef7f9a"><circle cx="533.0" cy="105" r="2.6"/><circle cx="540.0" cy="104" r="2.6"/><circle cx="547.0" cy="105" r="2.6"/></g><path d="M571.0 108v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><rect x="566.0" y="106" width="28" height="5" rx="2" fill="#4a3346" fill-opacity=".55"/><g fill="#ef7f9a"><circle cx="573.0" cy="105" r="2.6"/><circle cx="580.0" cy="104" r="2.6"/><circle cx="587.0" cy="105" r="2.6"/></g><path d="M611.0 108v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><rect x="606.0" y="106" width="28" height="5" rx="2" fill="#4a3346" fill-opacity=".55"/><g fill="#ef7f9a"><circle cx="613.0" cy="105" r="2.6"/><circle cx="620.0" cy="104" r="2.6"/><circle cx="627.0" cy="105" r="2.6"/></g><path d="M491.0 144v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M531.0 144v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M571.0 144v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M611.0 144v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M548 196v-30a12 12 0 0 1 24 0v30z" fill="#c2405f" stroke="#fffaf0" stroke-width="3"/><rect x="480" y="26" width="160" height="170" fill="none" stroke="#4a3346" stroke-opacity=".28" stroke-width="1.5"/></g><g class="sk-pop" style="--d:0.45s" stroke-linejoin="round"><rect x="640" y="26" width="132" height="170" fill="#f8d9b8"/><rect x="636" y="12" width="140" height="14" fill="#fffaf0"/><rect x="646" y="14" width="5" height="10" rx="2" fill="#f8d9b8"/><rect x="658" y="14" width="5" height="10" rx="2" fill="#f8d9b8"/><rect x="670" y="14" width="5" height="10" rx="2" fill="#f8d9b8"/><rect x="682" y="14" width="5" height="10" rx="2" fill="#f8d9b8"/><rect x="694" y="14" width="5" height="10" rx="2" fill="#f8d9b8"/><rect x="706" y="14" width="5" height="10" rx="2" fill="#f8d9b8"/><rect x="718" y="14" width="5" height="10" rx="2" fill="#f8d9b8"/><rect x="730" y="14" width="5" height="10" rx="2" fill="#f8d9b8"/><rect x="742" y="14" width="5" height="10" rx="2" fill="#f8d9b8"/><rect x="754" y="14" width="5" height="10" rx="2" fill="#f8d9b8"/><rect x="766" y="14" width="5" height="10" rx="2" fill="#f8d9b8"/><rect x="636" y="24" width="140" height="8" fill="#fffaf0"/><path d="M653.0 72v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M697.0 72v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M741.0 72v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M653.0 108v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M697.0 108v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M741.0 108v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M653.0 144v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M697.0 144v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M741.0 144v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M694 196v-30a12 12 0 0 1 24 0v30z" fill="#6f86c2" stroke="#fffaf0" stroke-width="3"/><path d="M644.0 138h20.7v12a10.3 10.3 0 0 1 -20.7 0z" fill="#f08da8"/><path d="M664.7 138h20.7v12a10.3 10.3 0 0 1 -20.7 0z" fill="#fff3e6"/><path d="M685.3 138h20.7v12a10.3 10.3 0 0 1 -20.7 0z" fill="#f08da8"/><path d="M706.0 138h20.7v12a10.3 10.3 0 0 1 -20.7 0z" fill="#fff3e6"/><path d="M726.7 138h20.7v12a10.3 10.3 0 0 1 -20.7 0z" fill="#f08da8"/><path d="M747.3 138h20.7v12a10.3 10.3 0 0 1 -20.7 0z" fill="#fff3e6"/><rect x="640" y="26" width="132" height="170" fill="none" stroke="#4a3346" stroke-opacity=".28" stroke-width="1.5"/></g><g class="sk-pop" style="--d:0.52s" stroke-linejoin="round"><rect x="772" y="54" width="146" height="142" fill="#f6c9cf"/><path d="M770 54l12 -26h126l12 26z" fill="#9fb0c9"/><rect x="834" y="34" width="22" height="16" rx="3" fill="#fffaf0"/><rect x="768" y="52" width="154" height="8" fill="#fffaf0"/><path d="M787.3 100v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M836.0 100v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M884.7 100v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M787.3 136v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><rect x="782.3" y="134" width="28" height="5" rx="2" fill="#4a3346" fill-opacity=".55"/><g fill="#ef7f9a"><circle cx="789.3" cy="133" r="2.6"/><circle cx="796.3" cy="132" r="2.6"/><circle cx="803.3" cy="133" r="2.6"/></g><path d="M836.0 136v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><rect x="831.0" y="134" width="28" height="5" rx="2" fill="#4a3346" fill-opacity=".55"/><g fill="#ef7f9a"><circle cx="838.0" cy="133" r="2.6"/><circle cx="845.0" cy="132" r="2.6"/><circle cx="852.0" cy="133" r="2.6"/></g><path d="M884.7 136v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><rect x="879.7" y="134" width="28" height="5" rx="2" fill="#4a3346" fill-opacity=".55"/><g fill="#ef7f9a"><circle cx="886.7" cy="133" r="2.6"/><circle cx="893.7" cy="132" r="2.6"/><circle cx="900.7" cy="133" r="2.6"/></g><path d="M833 196v-30a12 12 0 0 1 24 0v30z" fill="#7fb069" stroke="#fffaf0" stroke-width="3"/><rect x="772" y="54" width="146" height="142" fill="none" stroke="#4a3346" stroke-opacity=".28" stroke-width="1.5"/></g><g class="sk-pop" style="--d:0.59s" stroke-linejoin="round"><rect x="918" y="26" width="146" height="170" fill="#d9c8ef"/><path d="M914 26L991 0L1068 26z" fill="#fffaf0"/><circle cx="991" cy="17" r="5" fill="#e8c062"/><rect x="914" y="24" width="154" height="8" fill="#fffaf0"/><path d="M933.3 72v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M982.0 72v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M1030.7 72v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M933.3 108v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M982.0 108v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M1030.7 108v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M933.3 144v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M982.0 144v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M1030.7 144v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M979 196v-30a12 12 0 0 1 24 0v30z" fill="#9b86d6" stroke="#fffaf0" stroke-width="3"/><path d="M922.0 138h23.0v12a11.5 11.5 0 0 1 -23.0 0z" fill="#f08da8"/><path d="M945.0 138h23.0v12a11.5 11.5 0 0 1 -23.0 0z" fill="#fff3e6"/><path d="M968.0 138h23.0v12a11.5 11.5 0 0 1 -23.0 0z" fill="#f08da8"/><path d="M991.0 138h23.0v12a11.5 11.5 0 0 1 -23.0 0z" fill="#fff3e6"/><path d="M1014.0 138h23.0v12a11.5 11.5 0 0 1 -23.0 0z" fill="#f08da8"/><path d="M1037.0 138h23.0v12a11.5 11.5 0 0 1 -23.0 0z" fill="#fff3e6"/><rect x="918" y="26" width="146" height="170" fill="none" stroke="#4a3346" stroke-opacity=".28" stroke-width="1.5"/></g><g class="sk-pop" style="--d:0.66s" stroke-linejoin="round"><rect x="1064" y="54" width="160" height="142" fill="#c8e8d6"/><rect x="1060" y="40" width="168" height="14" fill="#fffaf0"/><rect x="1070" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="1082" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="1094" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="1106" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="1118" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="1130" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="1142" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="1154" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="1166" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="1178" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="1190" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="1202" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="1214" y="42" width="5" height="10" rx="2" fill="#c8e8d6"/><rect x="1060" y="52" width="168" height="8" fill="#fffaf0"/><path d="M1075.0 100v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M1115.0 100v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M1155.0 100v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M1195.0 100v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M1075.0 136v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><rect x="1070.0" y="134" width="28" height="5" rx="2" fill="#4a3346" fill-opacity=".55"/><g fill="#ef7f9a"><circle cx="1077.0" cy="133" r="2.6"/><circle cx="1084.0" cy="132" r="2.6"/><circle cx="1091.0" cy="133" r="2.6"/></g><path d="M1115.0 136v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><rect x="1110.0" y="134" width="28" height="5" rx="2" fill="#4a3346" fill-opacity=".55"/><g fill="#ef7f9a"><circle cx="1117.0" cy="133" r="2.6"/><circle cx="1124.0" cy="132" r="2.6"/><circle cx="1131.0" cy="133" r="2.6"/></g><path d="M1155.0 136v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><rect x="1150.0" y="134" width="28" height="5" rx="2" fill="#4a3346" fill-opacity=".55"/><g fill="#ef7f9a"><circle cx="1157.0" cy="133" r="2.6"/><circle cx="1164.0" cy="132" r="2.6"/><circle cx="1171.0" cy="133" r="2.6"/></g><path d="M1195.0 136v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><rect x="1190.0" y="134" width="28" height="5" rx="2" fill="#4a3346" fill-opacity=".55"/><g fill="#ef7f9a"><circle cx="1197.0" cy="133" r="2.6"/><circle cx="1204.0" cy="132" r="2.6"/><circle cx="1211.0" cy="133" r="2.6"/></g><path d="M1132 196v-30a12 12 0 0 1 24 0v30z" fill="#c2405f" stroke="#fffaf0" stroke-width="3"/><rect x="1064" y="54" width="160" height="142" fill="none" stroke="#4a3346" stroke-opacity=".28" stroke-width="1.5"/></g><g class="sk-pop" style="--d:0.73s" stroke-linejoin="round"><rect x="1224" y="54" width="118" height="142" fill="#fbeedb"/><path d="M1222 54l12 -26h98l12 26z" fill="#9fb0c9"/><rect x="1272" y="34" width="22" height="16" rx="3" fill="#fffaf0"/><rect x="1220" y="52" width="126" height="8" fill="#fffaf0"/><path d="M1244.5 100v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M1303.5 100v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M1244.5 136v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M1303.5 136v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M1271 196v-30a12 12 0 0 1 24 0v30z" fill="#6f86c2" stroke="#fffaf0" stroke-width="3"/><path d="M1228.0 138h18.3v12a9.2 9.2 0 0 1 -18.3 0z" fill="#f08da8"/><path d="M1246.3 138h18.3v12a9.2 9.2 0 0 1 -18.3 0z" fill="#fff3e6"/><path d="M1264.7 138h18.3v12a9.2 9.2 0 0 1 -18.3 0z" fill="#f08da8"/><path d="M1283.0 138h18.3v12a9.2 9.2 0 0 1 -18.3 0z" fill="#fff3e6"/><path d="M1301.3 138h18.3v12a9.2 9.2 0 0 1 -18.3 0z" fill="#f08da8"/><path d="M1319.7 138h18.3v12a9.2 9.2 0 0 1 -18.3 0z" fill="#fff3e6"/><rect x="1224" y="54" width="118" height="142" fill="none" stroke="#4a3346" stroke-opacity=".28" stroke-width="1.5"/></g><g class="sk-pop" style="--d:0.80s" stroke-linejoin="round"><rect x="1342" y="54" width="132" height="142" fill="#c6dcf2"/><path d="M1338 54L1408 28L1478 54z" fill="#fffaf0"/><circle cx="1408" cy="45" r="5" fill="#e8c062"/><rect x="1338" y="52" width="140" height="8" fill="#fffaf0"/><path d="M1355.0 100v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M1399.0 100v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M1443.0 100v-19a9 9 0 0 1 18 0v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><path d="M1355.0 136v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><rect x="1350.0" y="134" width="28" height="5" rx="2" fill="#4a3346" fill-opacity=".55"/><g fill="#ef7f9a"><circle cx="1357.0" cy="133" r="2.6"/><circle cx="1364.0" cy="132" r="2.6"/><circle cx="1371.0" cy="133" r="2.6"/></g><path d="M1399.0 136v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><rect x="1394.0" y="134" width="28" height="5" rx="2" fill="#4a3346" fill-opacity=".55"/><g fill="#ef7f9a"><circle cx="1401.0" cy="133" r="2.6"/><circle cx="1408.0" cy="132" r="2.6"/><circle cx="1415.0" cy="133" r="2.6"/></g><path d="M1443.0 136v-19h18v19z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3"/><rect x="1438.0" y="134" width="28" height="5" rx="2" fill="#4a3346" fill-opacity=".55"/><g fill="#ef7f9a"><circle cx="1445.0" cy="133" r="2.6"/><circle cx="1452.0" cy="132" r="2.6"/><circle cx="1459.0" cy="133" r="2.6"/></g><path d="M1396 196v-30a12 12 0 0 1 24 0v30z" fill="#7fb069" stroke="#fffaf0" stroke-width="3"/><rect x="1342" y="54" width="132" height="142" fill="none" stroke="#4a3346" stroke-opacity=".28" stroke-width="1.5"/></g><path class="sk-hedge" d="M-16 220V194a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0a16 14 0 0 1 32 0V220z" fill="#8cc276" stroke="#5f9a58" stroke-width="1.5"/><g class="sk-hedge"><circle cx="698" cy="200" r="3" fill="#f7b5c4"/><circle cx="406" cy="194" r="3" fill="#f7b5c4"/><circle cx="878" cy="196" r="3" fill="#fff7e8"/><circle cx="994" cy="199" r="3" fill="#ef7f9a"/><circle cx="658" cy="204" r="3" fill="#ffd75e"/><circle cx="573" cy="198" r="3" fill="#ffd75e"/><circle cx="913" cy="193" r="3" fill="#ef7f9a"/><circle cx="1418" cy="198" r="3" fill="#ef7f9a"/><circle cx="490" cy="193" r="3" fill="#ef7f9a"/><circle cx="816" cy="200" r="3" fill="#f7b5c4"/><circle cx="884" cy="193" r="3" fill="#fff7e8"/><circle cx="884" cy="194" r="3" fill="#f7b5c4"/><circle cx="1376" cy="200" r="3" fill="#ffd75e"/><circle cx="177" cy="204" r="3" fill="#ffd75e"/><circle cx="692" cy="196" r="3" fill="#fff7e8"/><circle cx="147" cy="197" r="3" fill="#f7b5c4"/><circle cx="689" cy="202" r="3" fill="#ef7f9a"/><circle cx="296" cy="205" r="3" fill="#f7b5c4"/><circle cx="211" cy="200" r="3" fill="#ef7f9a"/><circle cx="1092" cy="196" r="3" fill="#ef7f9a"/><circle cx="1003" cy="196" r="3" fill="#f7b5c4"/><circle cx="1308" cy="197" r="3" fill="#fff7e8"/><circle cx="767" cy="203" r="3" fill="#f7b5c4"/><circle cx="916" cy="201" r="3" fill="#fff7e8"/><circle cx="1161" cy="203" r="3" fill="#fff7e8"/><circle cx="288" cy="199" r="3" fill="#ef7f9a"/><circle cx="1425" cy="203" r="3" fill="#ffd75e"/><circle cx="373" cy="202" r="3" fill="#f7b5c4"/><circle cx="644" cy="205" r="3" fill="#f7b5c4"/><circle cx="1375" cy="197" r="3" fill="#fff7e8"/><circle cx="147" cy="199" r="3" fill="#f7b5c4"/><circle cx="294" cy="201" r="3" fill="#ef7f9a"/><circle cx="690" cy="201" r="3" fill="#ef7f9a"/><circle cx="1202" cy="194" r="3" fill="#ffd75e"/><circle cx="1127" cy="203" r="3" fill="#ffd75e"/><circle cx="1280" cy="198" r="3" fill="#f7b5c4"/><circle cx="125" cy="205" r="3" fill="#ffd75e"/><circle cx="667" cy="202" r="3" fill="#ef7f9a"/><circle cx="1044" cy="194" r="3" fill="#fff7e8"/><circle cx="40" cy="200" r="3" fill="#ffd75e"/><circle cx="1161" cy="194" r="3" fill="#ffd75e"/><circle cx="946" cy="197" r="3" fill="#fff7e8"/><circle cx="31" cy="203" r="3" fill="#ef7f9a"/><circle cx="758" cy="205" r="3" fill="#ffd75e"/><circle cx="1421" cy="195" r="3" fill="#fff7e8"/><circle cx="40" cy="195" r="3" fill="#fff7e8"/><circle cx="1100" cy="197" r="3" fill="#ffd75e"/><circle cx="1201" cy="193" r="3" fill="#f7b5c4"/><circle cx="1293" cy="201" r="3" fill="#ffd75e"/><circle cx="1191" cy="204" r="3" fill="#fff7e8"/><circle cx="766" cy="199" r="3" fill="#ef7f9a"/><circle cx="1257" cy="203" r="3" fill="#ef7f9a"/><circle cx="1117" cy="194" r="3" fill="#fff7e8"/><circle cx="682" cy="202" r="3" fill="#ef7f9a"/><circle cx="469" cy="199" r="3" fill="#ffd75e"/><circle cx="1129" cy="193" r="3" fill="#ef7f9a"/><circle cx="358" cy="196" r="3" fill="#ef7f9a"/><circle cx="731" cy="200" r="3" fill="#ef7f9a"/><circle cx="638" cy="201" r="3" fill="#fff7e8"/><circle cx="998" cy="198" r="3" fill="#ffd75e"/><circle cx="731" cy="195" r="3" fill="#f7b5c4"/><circle cx="1329" cy="204" r="3" fill="#fff7e8"/><circle cx="1210" cy="194" r="3" fill="#ef7f9a"/><circle cx="565" cy="196" r="3" fill="#fff7e8"/><circle cx="617" cy="195" r="3" fill="#f7b5c4"/><circle cx="1129" cy="205" r="3" fill="#fff7e8"/><circle cx="1353" cy="201" r="3" fill="#f7b5c4"/><circle cx="206" cy="204" r="3" fill="#ffd75e"/><circle cx="316" cy="205" r="3" fill="#ffd75e"/><circle cx="1274" cy="194" r="3" fill="#fff7e8"/><circle cx="233" cy="198" r="3" fill="#ffd75e"/><circle cx="488" cy="195" r="3" fill="#f7b5c4"/><circle cx="133" cy="197" r="3" fill="#f7b5c4"/><circle cx="798" cy="198" r="3" fill="#ef7f9a"/><circle cx="553" cy="199" r="3" fill="#f7b5c4"/><circle cx="738" cy="193" r="3" fill="#fff7e8"/><circle cx="1399" cy="193" r="3" fill="#f7b5c4"/><circle cx="392" cy="205" r="3" fill="#fff7e8"/><circle cx="389" cy="194" r="3" fill="#ffd75e"/><circle cx="1223" cy="201" r="3" fill="#f7b5c4"/><circle cx="585" cy="200" r="3" fill="#ffd75e"/><circle cx="1009" cy="193" r="3" fill="#ef7f9a"/><circle cx="1151" cy="195" r="3" fill="#ef7f9a"/><circle cx="387" cy="192" r="3" fill="#ef7f9a"/><circle cx="1154" cy="193" r="3" fill="#fff7e8"/><circle cx="96" cy="204" r="3" fill="#ffd75e"/><circle cx="17" cy="206" r="3" fill="#ffd75e"/><circle cx="1334" cy="196" r="3" fill="#fff7e8"/><circle cx="62" cy="202" r="3" fill="#ef7f9a"/><circle cx="1396" cy="196" r="3" fill="#fff7e8"/></g></svg>
+      <span class="ribbon" aria-hidden="true"></span>
     </header>
 
     <main>
-      <section class="section shots-section" aria-labelledby="shots-title">
-        <div class="wrap section-head">
-          <h2 id="shots-title">A peek inside the book</h2>
-          <p class="lead">Twelve chapters of tea, flowers and very busy customers.</p>
-          <div class="strip-nav">
-            <button class="round-btn" type="button" data-strip="-1" aria-label="Previous pictures">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 5 7.5 12l7 7" /></svg>
-            </button>
-            <button class="round-btn" type="button" data-strip="1" aria-label="Next pictures">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 5l7 7-7 7" /></svg>
-            </button>
+      <section class="endpaper" aria-labelledby="park-title">
+        <div class="wrap endpaper-inner">
+          <svg class="map" viewBox="0 0 1000 620" aria-hidden="true" focusable="false">
+            <defs>
+              <clipPath id="lake-clip">
+                <path
+                  d="M470 620C470 560 500 500 500 450C500 380 540 340 600 330C680 318 720 290 800 290C880 290 930 270 1000 260V620z"
+                />
+              </clipPath>
+            </defs>
+            <!-- The hill under the castle. -->
+            <path d="M686 322C730 200 840 112 918 110S990 120 1000 128V330H686z" fill="#e3ebcf" />
+            <path
+              d="M686 322C730 200 840 112 918 110S990 120 1000 128"
+              fill="none"
+              stroke="#4a3346"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            />
+            <!-- The lake: a pale wash, a deeper band along the shore, then the ink shoreline. -->
+            <path
+              d="M470 620C470 560 500 500 500 450C500 380 540 340 600 330C680 318 720 290 800 290C880 290 930 270 1000 260V620z"
+              fill="#d6e9eb"
+            />
+            <path
+              d="M470 620C470 560 500 500 500 450C500 380 540 340 600 330C680 318 720 290 800 290C880 290 930 270 1000 260"
+              fill="none"
+              stroke="#b6d9de"
+              stroke-width="34"
+              clip-path="url(#lake-clip)"
+            />
+            <path
+              d="M470 620C470 560 500 500 500 450C500 380 540 340 600 330C680 318 720 290 800 290C880 290 930 270 1000 260"
+              fill="none"
+              stroke="#4a3346"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+            <g fill="none" stroke="#3a8aa0" stroke-width="1.6" stroke-linecap="round" opacity=".55">
+              <path d="M560 400c4-3 8 3 12 0s8 3 12 0" />
+              <path d="M820 360c4-3 8 3 12 0s8 3 12 0" />
+              <path d="M760 520c4-3 8 3 12 0s8 3 12 0" />
+              <path d="M600 580c4-3 8 3 12 0s8 3 12 0" />
+              <path d="M900 440c4-3 8 3 12 0s8 3 12 0" />
+              <path d="M540 520c4-3 8 3 12 0s8 3 12 0" />
+            </g>
+            <text
+              x="820"
+              y="420"
+              text-anchor="middle"
+              font-family="'Playfair Display', Georgia, serif"
+              font-style="italic"
+              font-weight="700"
+              font-size="30"
+              fill="#3a8aa0"
+              opacity=".8"
+            >
+              The Lake
+            </text>
+            <!-- The island folly (chapter 10). -->
+            <ellipse cx="680" cy="404" rx="62" ry="22" fill="#f2e7d0" stroke="#4a3346" stroke-width="1.6" />
+            <svg
+              x="656"
+              y="350"
+              width="48"
+              height="46"
+              viewBox="0 0 48 46"
+              stroke="#4a3346"
+              stroke-width="1.3"
+              stroke-linejoin="round"
+            >
+              <path d="M8 42h32v-4H8z" fill="#fffaf0" />
+              <path d="M12 38V22M20 38V22M28 38V22M36 38V22" fill="none" />
+              <path d="M8 22h32v-3H8z" fill="#fffaf0" />
+              <path d="M10 19a14 12 0 0 1 28 0z" fill="#d9c8ef" />
+              <path d="M24 7V3" stroke-linecap="round" />
+            </svg>
+            <!-- A rowing boat (the game's map drawing). -->
+            <svg
+              x="556"
+              y="460"
+              width="84"
+              height="56"
+              viewBox="0 0 60 40"
+              stroke="#4a3346"
+              stroke-width="1.2"
+              stroke-linejoin="round"
+            >
+              <path d="M10 28h40l-6 7H16z" fill="#a87c55" />
+              <path d="M30 6v22" fill="none" />
+              <path d="M31 8l14 17H31z" fill="#fffaf0" />
+              <path d="M29 10 18 25h11z" fill="#f7b5c4" />
+              <path
+                d="M2 37c4-3 8 3 12 0s8 3 12 0 8 3 12 0 8 3 12 0 6 3 8 0"
+                fill="none"
+                stroke="#3a8aa0"
+                stroke-width="1.4"
+              />
+            </svg>
+            <!-- The compass rose. -->
+            <svg
+              x="904"
+              y="522"
+              width="68"
+              height="68"
+              viewBox="0 0 40 40"
+              stroke="#4a3346"
+              stroke-width="1"
+              stroke-linejoin="round"
+            >
+              <circle cx="20" cy="21" r="14" fill="#fffaf0" stroke-opacity=".6" />
+              <path d="M20 6l3 12 12 3-12 3-3 12-3-12-12-3 12-3z" fill="#e8c062" />
+              <path d="M20 6l3 12h-6zM20 36l-3-12h6z" fill="#ef7f9a" />
+            </svg>
+            <!-- Mrs. Pemberton's row of townhouses (chapter 1). -->
+            <svg
+              x="16"
+              y="392"
+              width="106"
+              height="71"
+              viewBox="0 0 60 40"
+              stroke="#4a3346"
+              stroke-width="1.2"
+              stroke-linejoin="round"
+            >
+              <path d="M4 38V18l8-8 8 8v20z" fill="#f6c9cf" />
+              <path d="M20 38V14l9-9 9 9v24z" fill="#d9c8ef" />
+              <path d="M38 38V20l8-7 8 7v18z" fill="#c8e8d6" />
+              <path d="M9 24h6v5H9zM25 18h7v5h-7zM25 28h7v5h-7zM43 25h6v5h-6z" fill="#fffaf0" />
+              <path d="M2 38h56" stroke-linecap="round" />
+            </svg>
+            <!-- Rose Row (chapter 8). -->
+            <svg
+              x="262"
+              y="80"
+              width="98"
+              height="65"
+              viewBox="0 0 60 40"
+              stroke="#4a3346"
+              stroke-width="1.2"
+              stroke-linejoin="round"
+            >
+              <path d="M4 38V18l8-8 8 8v20z" fill="#fbeedb" />
+              <path d="M20 38V14l9-9 9 9v24z" fill="#f6c9cf" />
+              <path d="M38 38V20l8-7 8 7v18z" fill="#f8d9b8" />
+              <path d="M9 24h6v5H9zM25 18h7v5h-7zM25 28h7v5h-7zM43 25h6v5h-6z" fill="#fffaf0" />
+              <path d="M2 38h56" stroke-linecap="round" />
+            </svg>
+            <!-- The flower fair stall (chapter 3). -->
+            <svg
+              x="366"
+              y="532"
+              width="80"
+              height="64"
+              viewBox="0 0 50 40"
+              stroke="#4a3346"
+              stroke-width="1.2"
+              stroke-linejoin="round"
+            >
+              <path d="M6 16h38l-3-8H9z" fill="#f08da8" />
+              <path d="M13 8.4l-1.6 7.2M20 8.4l-.8 7.2M27 8.4v7.2M34 8.4l.8 7.2" stroke="#fff6e6" stroke-width="2" />
+              <path d="M9 16v20M41 16v20" fill="none" />
+              <path d="M7 26h36v4H7z" fill="#a87c55" />
+              <g stroke-width=".8">
+                <circle cx="14" cy="23" r="2.4" fill="#ef7f9a" />
+                <circle cx="20" cy="22.4" r="2.4" fill="#ffd75e" />
+                <circle cx="26" cy="23" r="2.4" fill="#b79ce0" />
+                <circle cx="32" cy="22.4" r="2.4" fill="#f7b5c4" />
+                <circle cx="37" cy="23" r="2.2" fill="#ef7f9a" />
+              </g>
+            </svg>
+            <!-- The builders' crane at the ball pavilion (chapter 6). -->
+            <svg
+              x="190"
+              y="366"
+              width="62"
+              height="55"
+              viewBox="0 0 50 44"
+              fill="none"
+              stroke="#4a3346"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 42V8M7 42h10M12 8h32M12 16l8-8M44 8v11M12 8 5 14h7" />
+              <rect x="39" y="19" width="10" height="7" rx="1" fill="#a7c7f4" />
+            </svg>
+            <!-- The kiosk at the far gate (chapter 7). -->
+            <svg
+              x="30"
+              y="282"
+              width="40"
+              height="48"
+              viewBox="0 0 30 36"
+              stroke="#4a3346"
+              stroke-width="1.2"
+              stroke-linejoin="round"
+            >
+              <path d="M5 34V16h20v18z" fill="#fffaf0" />
+              <path d="M2 16 15 4l13 12z" fill="#f08da8" />
+              <path d="M10 11.4 15 4l5 7.4" fill="none" stroke="#fff6e6" stroke-width="1.6" />
+              <path d="M5 24h20" />
+              <path d="M11 34v-6h8v6" fill="#c8e8d6" />
+            </svg>
+            <!-- A storm cloud (chapter 9). -->
+            <svg
+              x="406"
+              y="104"
+              width="84"
+              height="60"
+              viewBox="0 0 56 40"
+              stroke="#4a3346"
+              stroke-width="1.2"
+              stroke-linejoin="round"
+            >
+              <path d="M12 24a7 7 0 0 1 1-14 10 10 0 0 1 19-2 8 8 0 0 1 12 6 6 6 0 0 1-1 12H13z" fill="#e6e3ee" />
+              <path d="M16 30l-2 5M25 30l-2 5M34 30l-2 5M43 30l-2 5" stroke="#3a8aa0" stroke-linecap="round" />
+            </svg>
+            <!-- An invitation (chapter 11). -->
+            <svg
+              x="590"
+              y="122"
+              width="50"
+              height="38"
+              viewBox="0 0 40 30"
+              stroke="#4a3346"
+              stroke-width="1.2"
+              stroke-linejoin="round"
+            >
+              <g transform="rotate(-10 20 15)">
+                <rect x="4" y="5" width="32" height="21" rx="1.5" fill="#fffaf0" />
+                <path d="M4 6l16 11 16-11" fill="none" />
+                <circle cx="20" cy="17" r="3.2" fill="#b3304e" stroke="none" />
+              </g>
+            </svg>
+            <!-- The castle (chapter 12) and the lighthouse. -->
+            <svg
+              x="866"
+              y="30"
+              width="106"
+              height="83"
+              viewBox="0 0 56 44"
+              stroke="#4a3346"
+              stroke-width="1.2"
+              stroke-linejoin="round"
+            >
+              <path d="M14 42V22h28v20z" fill="#f3e8f6" />
+              <path d="M6 42V18h9v24zM41 42V18h9v24z" fill="#efe2f4" />
+              <path d="M5 18l5.5-10L16 18zM40 18l5.5-10L51 18z" fill="#8a9bb5" />
+              <path d="M22 22V12h12v10" fill="#f3e8f6" />
+              <path d="M21 12l7-8 7 8z" fill="#b79ce0" />
+              <path d="M25 42v-7a3 3 0 0 1 6 0v7" fill="#3c4258" />
+              <path d="M28 4V1M10.5 8V5M45.5 8V5" stroke-linecap="round" />
+            </svg>
+            <svg
+              x="946"
+              y="194"
+              width="34"
+              height="58"
+              viewBox="0 0 30 50"
+              stroke="#4a3346"
+              stroke-width="1.2"
+              stroke-linejoin="round"
+            >
+              <path d="M9 46l3-30h6l3 30z" fill="#fffaf0" />
+              <path d="M10.6 32h8.8l.6 6h-10zM11.6 22h6.8l.5 4h-7.8z" fill="#ef7f9a" />
+              <path d="M10 16h10v-5H10z" fill="#ffd27a" />
+              <path d="M9 11l6-6 6 6z" fill="#3c4258" />
+              <path d="M4 46h22" stroke-linecap="round" />
+              <path d="M2 13h6M22 13h6M4 7l5 3M26 7l-5 3" stroke="#e8c062" stroke-linecap="round" />
+            </svg>
+            <!-- Trees of the park. -->
+            <g stroke="#4a3346" stroke-width="1.4" stroke-linejoin="round">
+              <g fill="#cfe1b6">
+                <circle cx="44" cy="150" r="15" />
+                <circle cx="80" cy="112" r="13" />
+                <circle cx="150" cy="86" r="14" />
+                <circle cx="316" cy="268" r="14" />
+                <circle cx="290" cy="420" r="13" />
+                <circle cx="160" cy="548" r="14" />
+                <circle cx="250" cy="586" r="13" />
+                <circle cx="506" cy="150" r="14" />
+                <circle cx="470" cy="60" r="13" />
+                <circle cx="760" cy="96" r="12" />
+                <circle cx="40" cy="586" r="13" />
+                <circle cx="600" cy="48" r="13" />
+              </g>
+              <path
+                d="M44 165v10M80 125v9M150 100v10M316 282v10M290 433v9M160 562v10M250 599v9M506 164v10M470 73v9M760 108v9M40 599v9M600 61v9"
+                fill="none"
+                stroke-linecap="round"
+              />
+            </g>
+            <!-- Gulls over the shore. -->
+            <g fill="none" stroke="#4a3346" stroke-width="1.6" stroke-linecap="round">
+              <path d="M466 318q5-5 10 0q5-5 10 0" />
+              <path d="M500 300q4-4 8 0q4-4 8 0" />
+              <path d="M492 340q4-4 8 0q4-4 8 0" />
+            </g>
+            <!-- Berla's route from chapter to chapter. -->
+            <path
+              d="M90 540C109.2 528.3 165 472.5 205 470C245 467.5 289.2 530 330 525C370.8 520 442.5 470 450 440C457.5 410 410 362.5 375 345C340 327.5 284.2 350.8 240 335C195.8 319.2 114.2 279.2 110 250C105.8 220.8 170.8 168.3 215 160C259.2 151.7 320 179.2 375 200C430 220.8 494.2 285.8 545 285C595.8 284.2 632.5 222.8 680 195C727.5 167.2 805 130.8 830 118"
+              fill="none"
+              stroke="#c2436a"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-dasharray="0 11"
+            />
+            <!-- One numbered stop per chapter. Chapter 1, where the book starts, is in the accent colour. -->
+            <g font-family="'Playfair Display', Georgia, serif" font-weight="700" font-size="25" text-anchor="middle">
+              <g fill="#3d2a3a">
+                <circle cx="93" cy="543" r="25" />
+                <circle cx="208" cy="473" r="25" />
+                <circle cx="333" cy="528" r="25" />
+                <circle cx="453" cy="443" r="25" />
+                <circle cx="378" cy="348" r="25" />
+                <circle cx="243" cy="338" r="25" />
+                <circle cx="113" cy="253" r="25" />
+                <circle cx="218" cy="163" r="25" />
+                <circle cx="378" cy="203" r="25" />
+                <circle cx="548" cy="288" r="25" />
+                <circle cx="683" cy="198" r="25" />
+                <circle cx="833" cy="121" r="25" />
+              </g>
+              <g fill="#fcf6ea" stroke="#3d2a3a" stroke-width="1.8">
+                <circle cx="90" cy="540" r="25" fill="#c2436a" />
+                <circle cx="205" cy="470" r="25" />
+                <circle cx="330" cy="525" r="25" />
+                <circle cx="450" cy="440" r="25" />
+                <circle cx="375" cy="345" r="25" />
+                <circle cx="240" cy="335" r="25" />
+                <circle cx="110" cy="250" r="25" />
+                <circle cx="215" cy="160" r="25" />
+                <circle cx="375" cy="200" r="25" />
+                <circle cx="545" cy="285" r="25" />
+                <circle cx="680" cy="195" r="25" />
+                <circle cx="830" cy="118" r="25" />
+              </g>
+              <g fill="#3d2a3a">
+                <text x="90" y="549" fill="#fffaf0">1</text>
+                <text x="205" y="479">2</text>
+                <text x="330" y="534">3</text>
+                <text x="450" y="449">4</text>
+                <text x="375" y="354">5</text>
+                <text x="240" y="344">6</text>
+                <text x="110" y="259">7</text>
+                <text x="215" y="169">8</text>
+                <text x="375" y="209">9</text>
+                <text x="545" y="294">10</text>
+                <text x="680" y="204">11</text>
+                <text x="830" y="127">12</text>
+              </g>
+            </g>
+          </svg>
+
+          <div class="key">
+            <p class="eyebrow">The map</p>
+            <h2 id="park-title" class="title">The Royal Park</h2>
+            <ol class="chapters">
+              <li>A Fine Morning</li>
+              <li>Orders at the Bakery</li>
+              <li>The Flower Fair</li>
+              <li>Down by the Lake</li>
+              <li>The Admiral's Tea</li>
+              <li>The Ball Pavilion</li>
+              <li>A Kiosk Too Far</li>
+              <li>Balconies of Rose Row</li>
+              <li>Storm Over the Park</li>
+              <li>The Hermit of the Island Folly</li>
+              <li>Invitations</li>
+              <li>The Grand Ball</li>
+            </ol>
+            <p class="key-note">
+              Then comes the Endless Season, with no finish line, and a new Daily run every day. Tips from happy
+              customers buy Berla new gowns.
+            </p>
           </div>
         </div>
-        <div class="strip" id="strip" tabindex="0" aria-label="Pictures from the game">
-          <figure class="shot">
-            <img src="./shots/run.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Berla runs past striped awnings while a porter pushes a flower cart along the lake." />
-            <figcaption><strong>The flower fair</strong><span>Dodge the vendors' carts on the lakeside promenade.</span></figcaption>
+      </section>
+
+      <section class="plates" aria-labelledby="plates-title">
+        <h2 id="plates-title" class="visually-hidden">Pictures from the game</h2>
+        <div class="wrap plates-grid">
+          <figure class="plate plate-wide">
+            <div class="plate-mount">
+              <img
+                src="./shots/boats.webp"
+                width="1280"
+                height="720"
+                loading="lazy"
+                decoding="async"
+                alt="A brook crosses the promenade by the lake, with a footbridge and rowing boats."
+              />
+            </div>
+            <figcaption>
+              <span class="plate-no">Plate I</span>
+              <span class="plate-title">Down by the Lake</span>
+              <span class="plate-text">Jump the brooks, or take the footbridge.</span>
+            </figcaption>
           </figure>
-          <figure class="shot">
-            <img src="./shots/boats.webp" width="1280" height="720" loading="lazy" decoding="async" alt="A canal crosses the promenade, with a footbridge and rowing boats. Gold rings show customers in reach." />
-            <figcaption><strong>Down by the lake</strong><span>Jump the brooks, or take the footbridge.</span></figcaption>
+          <figure class="plate plate-left">
+            <div class="plate-mount">
+              <img
+                src="./shots/zip.webp"
+                width="1280"
+                height="720"
+                loading="lazy"
+                decoding="async"
+                alt="Berla runs below the flower balconies of Rose Row in the evening light, with gulls over the lake."
+              />
+            </div>
+            <figcaption>
+              <span class="plate-no">Plate II</span>
+              <span class="plate-title">Balconies of Rose Row</span>
+              <span class="plate-text">Jump, then throw a cup up to the balconies.</span>
+            </figcaption>
           </figure>
-          <figure class="shot">
-            <img src="./shots/zip.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Berla runs below balconies full of flowers while gulls fly over the lake." />
-            <figcaption><strong>Balconies of Rose Row</strong><span>Jump, then throw a cup up to the balconies.</span></figcaption>
-          </figure>
-          <figure class="shot">
-            <img src="./shots/cranes.webp" width="1280" height="720" loading="lazy" decoding="async" alt="A crane swings a heavy load across the promenade ahead of Berla." />
-            <figcaption><strong>Crane yard rush</strong><span>Step aside when a crane load swings by.</span></figcaption>
-          </figure>
-          <figure class="shot">
-            <img src="./shots/map.webp" width="1280" height="720" loading="lazy" decoding="async" alt="The storybook map of the royal park, with numbered chapters along a dotted path." />
-            <figcaption><strong>The storybook map</strong><span>Pick a chapter, or try the Endless Season.</span></figcaption>
-          </figure>
-          <figure class="shot">
-            <img src="./shots/complete.webp" width="1280" height="720" loading="lazy" decoding="async" alt="A chapter complete card with stars, tips and a new gown unlocked." />
-            <figcaption><strong>Earn your stars</strong><span>Serve more customers for three stars and new gowns.</span></figcaption>
+          <figure class="plate plate-right">
+            <div class="plate-mount">
+              <img
+                src="./shots/ball.webp"
+                width="1280"
+                height="720"
+                loading="lazy"
+                decoding="async"
+                alt="Berla runs toward the palace at dusk, past lit windows and lanterns by the lake."
+              />
+            </div>
+            <figcaption>
+              <span class="plate-no">Plate III</span>
+              <span class="plate-title">The Grand Ball</span>
+              <span class="plate-text">The ball begins at dusk. Bring the matcha to the palace steps.</span>
+            </figcaption>
           </figure>
         </div>
       </section>
 
-      <section class="section how-section" aria-labelledby="how-title">
-        <div class="wrap">
-          <div class="section-head">
-            <h2 id="how-title">How to play</h2>
-            <p class="lead">Swipe on a phone or tablet. On a computer, use the keys.</p>
-          </div>
-          <ol class="moves">
-            <li class="card move">
-              <span class="move-icon" aria-hidden="true">
-                <svg viewBox="0 0 64 64" fill="none" stroke="#4a3346" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="20" y="8" width="24" height="44" rx="5" fill="#fffaf0" /><path d="M8 32h48M14 26l-6 6 6 6M50 26l6 6-6 6" stroke="#c2405f" stroke-width="3" /><circle cx="32" cy="32" r="5" fill="#f7b5c4" /></svg>
-              </span>
-              <h3>Change lane</h3>
-              <p>Swipe <b>left</b> or <b>right</b> to move between the three lanes.</p>
-            </li>
-            <li class="card move">
-              <span class="move-icon" aria-hidden="true">
-                <svg viewBox="0 0 64 64" fill="none" stroke="#4a3346" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="20" y="8" width="24" height="44" rx="5" fill="#fffaf0" /><path d="M32 46V14M26 20l6-6 6 6" stroke="#c2405f" stroke-width="3" /><circle cx="32" cy="44" r="5" fill="#f7b5c4" /><path d="M8 56h48" stroke-dasharray="3 5" /></svg>
-              </span>
-              <h3>Jump</h3>
-              <p>Swipe <b>up</b> to hop over hatboxes and brooks.</p>
-            </li>
-            <li class="card move">
-              <span class="move-icon" aria-hidden="true">
-                <svg viewBox="0 0 64 64" fill="none" stroke="#4a3346" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="20" y="8" width="24" height="44" rx="5" fill="#fffaf0" /><path d="M32 16v26M26 36l6 6 6-6" stroke="#c2405f" stroke-width="3" /><circle cx="32" cy="18" r="5" fill="#f7b5c4" /><path d="M48 10h10v4c0 4-2.2 6-5 6s-5-2-5-6z" fill="#fffaf0" stroke-width="2" /><path d="M48.6 10.6h8.8" stroke="#7fb069" stroke-width="2.4" /></svg>
-              </span>
-              <h3>Throw a cup</h3>
-              <p>Swipe <b>down</b> to throw to the best customer in reach, or <b>tap</b> a customer to choose them.</p>
-            </li>
-            <li class="card move">
-              <span class="move-icon" aria-hidden="true">
-                <svg viewBox="0 0 64 64" stroke="#4a3346" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><path d="M8 40C7.6 24 17.6 11.4 37.6 10.4 36.8 30.4 24.4 40.4 8 40z" fill="#6fcf6f" /><path d="M9.6 38.4 28.8 19.2" stroke="#fff" stroke-opacity=".85" /><ellipse cx="44" cy="54" rx="14" ry="3" fill="#fffaf0" /><path d="M32 36h24v5c0 6-5.4 11-12 11s-12-5-12-11z" fill="#fffaf0" /><ellipse cx="44" cy="36.4" rx="11" ry="2.2" fill="#7fb069" stroke="none" /><circle cx="44" cy="44" r="2.4" fill="#ef7f9a" stroke="none" /></svg>
-              </span>
-              <h3>Brew more cups</h3>
-              <p>Collect <b>tea leaves</b> to brew fresh cups. A bump spills a cup, so keep your basket full!</p>
-            </li>
-          </ol>
-
-          <div class="card reach">
-            <svg class="reach-art" viewBox="0 0 200 170" aria-hidden="true" stroke-linejoin="round">
-              <rect x="30" y="20" width="140" height="140" fill="#f6c9cf" stroke="#4a3346" stroke-opacity=".35" stroke-width="1.5" />
-              <path d="M24 20l12-14h128l12 14z" fill="#9fb0c9" />
-              <rect x="24" y="17" width="152" height="7" fill="#fffaf0" />
-              <path d="M126 76v-22a12 12 0 0 1 24 0v22z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3" />
-              <path d="M50 76v-22a12 12 0 0 1 24 0v22z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3" />
-              <rect x="42" y="74" width="40" height="5" rx="2" fill="#4a3346" fill-opacity=".7" />
-              <path d="M44 79v12M52 79v12M60 79v12M68 79v12M76 79v12" stroke="#4a3346" stroke-opacity=".7" stroke-width="2" />
-              <rect x="42" y="90" width="40" height="4" rx="2" fill="#4a3346" fill-opacity=".7" />
-              <path d="M126 130v-14a12 12 0 0 1 24 0v14z" fill="#e3edf7" stroke="#fffaf0" stroke-width="3" />
-              <path d="M88 160v-36a12 12 0 0 1 24 0v36z" fill="#c2405f" stroke="#fffaf0" stroke-width="3" />
-              <circle cx="62" cy="40" r="12" fill="#fffaf0" stroke="#e8c062" stroke-width="3" />
-              <text x="62" y="45" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="14" fill="#4a3346">3</text>
-              <circle cx="138" cy="100" r="12" fill="#fffaf0" stroke="#e8c062" stroke-width="3" />
-              <text x="138" y="105" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="14" fill="#4a3346">2</text>
-              <circle cx="100" cy="110" r="12" fill="#fffaf0" stroke="#e8c062" stroke-width="3" />
-              <text x="100" y="115" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="14" fill="#4a3346">1</text>
-              <path d="M10 160h180" stroke="#7fb76a" stroke-width="6" stroke-linecap="round" />
+      <section class="how" aria-labelledby="how-title">
+        <div class="wrap how-grid">
+          <article class="letter" aria-label="A letter from chapter 1">
+            <svg class="seal" viewBox="0 0 48 48" aria-hidden="true">
+              <polygon
+                points="45.5,24.0 43.0,30.2 41.4,36.6 35.8,40.2 30.6,44.4 24.0,44.0 17.4,44.4 12.2,40.2 6.6,36.6 5.0,30.2 2.5,24.0 5.0,17.8 6.6,11.4 12.2,7.8 17.4,3.6 24.0,4.0 30.6,3.6 35.8,7.8 41.4,11.4 43.0,17.8"
+                fill="#b3304e"
+                stroke="#b3304e"
+                stroke-width="3"
+                stroke-linejoin="round"
+              />
+              <circle cx="24" cy="24" r="14.6" fill="none" stroke="#ec8ea2" stroke-width="1.4" opacity=".75" />
+              <path
+                d="M24 17.5a6.5 6.5 0 1 0 6.5 6.5M24 20.4a3.6 3.6 0 1 1-3.6 3.6M24 22.6a1.4 1.4 0 1 0 1.4 1.4"
+                fill="none"
+                stroke="#ec8ea2"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+              <path
+                d="M17.6 30.6c-2.4.6-4.4-.6-4.4-.6s1.4-2 4-1.6M30.4 30.6c2.4.6 4.4-.6 4.4-.6s-1.4-2-4-1.6"
+                fill="none"
+                stroke="#ec8ea2"
+                stroke-width="1.4"
+                stroke-linecap="round"
+              />
             </svg>
-            <div class="reach-copy">
-              <h3>Where customers wait</h3>
-              <ol class="reach-list">
+            <p class="eyebrow">Chapter 1</p>
+            <p class="letter-title">A Fine Morning</p>
+            <p class="letter-text">
+              Dearest Berla, the sun is out over the park and my kettle is cold. Might you bring a cup of your famous
+              matcha before my morning promenade?
+            </p>
+            <p class="letter-sign">Mrs. Pemberton</p>
+          </article>
+
+          <div class="directions">
+            <p class="eyebrow">Directions</p>
+            <h2 id="how-title" class="title">How to play</h2>
+            <dl class="moves">
+              <div class="move">
+                <dt>Change lane</dt>
+                <dd>
+                  Swipe left or right <span class="keys"><kbd>←</kbd> <kbd>→</kbd></span>
+                </dd>
+              </div>
+              <div class="move">
+                <dt>Jump</dt>
+                <dd>
+                  Swipe up <span class="keys"><kbd>↑</kbd> or <kbd>Space</kbd></span>
+                </dd>
+              </div>
+              <div class="move">
+                <dt>Throw a cup</dt>
+                <dd>
+                  Swipe down, or tap a customer <span class="keys"><kbd>↓</kbd> or <kbd>E</kbd></span>
+                </dd>
+              </div>
+              <div class="move">
+                <dt>Brew more cups</dt>
+                <dd>Run through tea leaves</dd>
+              </div>
+              <div class="move">
+                <dt>Pause</dt>
+                <dd>
+                  Tap the pause button <span class="keys"><kbd>Esc</kbd></span>
+                </dd>
+              </div>
+            </dl>
+            <p class="small">A bump spills a cup, so keep your basket full.</p>
+          </div>
+
+          <figure class="fig">
+            <svg class="fig-art" viewBox="0 0 220 180" aria-hidden="true" stroke="#3d2a3a" stroke-linejoin="round">
+              <rect x="40" y="24" width="140" height="136" fill="#f6c9cf" stroke-width="1.6" />
+              <path d="M34 24l12-14h128l12 14z" fill="#8a9bb5" stroke-width="1.6" />
+              <rect x="32" y="20" width="156" height="7" fill="#fffaf0" stroke-width="1.4" />
+              <path d="M58 78V56a12 12 0 0 1 24 0v22z" fill="#e3edf7" stroke-width="1.4" />
+              <path d="M138 78V56a12 12 0 0 1 24 0v22z" fill="#e3edf7" stroke-width="1.4" />
+              <path
+                d="M50 78h40M52 78v12M60 78v12M70 78v12M80 78v12M88 78v12M50 90h40"
+                fill="none"
+                stroke-width="1.6"
+                stroke-linecap="round"
+              />
+              <path d="M138 134v-16a12 12 0 0 1 24 0v16z" fill="#e3edf7" stroke-width="1.4" />
+              <path d="M98 160v-36a12 12 0 0 1 24 0v36z" fill="#c2436a" stroke-width="1.6" />
+              <path d="M8 160h204" stroke-width="1.8" stroke-linecap="round" />
+              <g stroke="#e5b54e" stroke-width="3.2" fill="#fcf6ea">
+                <circle cx="70" cy="44" r="12" />
+                <circle cx="150" cy="106" r="12" />
+                <circle cx="110" cy="112" r="12" />
+              </g>
+              <g
+                font-family="Nunito, sans-serif"
+                font-weight="800"
+                font-size="14"
+                text-anchor="middle"
+                fill="#3d2a3a"
+                stroke="none"
+              >
+                <text x="70" y="49">3</text>
+                <text x="150" y="111">2</text>
+                <text x="110" y="117">1</text>
+              </g>
+            </svg>
+            <figcaption>
+              <p class="fig-title"><span class="fig-no">Fig. 1.</span> Where customers wait</p>
+              <ol class="spots">
                 <li><b>Doorways:</b> run in one of the two lanes nearest the houses.</li>
-                <li><b>Windows:</b> you can reach them from any lane.</li>
+                <li><b>Windows:</b> reach them from any lane.</li>
                 <li><b>Balconies:</b> jump first, then throw while you are in the air.</li>
               </ol>
-              <p class="hint"><span class="ring ring-gold"></span>A gold ring means you can reach them. <span class="ring ring-green"></span>Green means a Perfect throw.</p>
-            </div>
-          </div>
-
-          <p class="keys">
-            <span class="keys-title">On a computer:</span>
-            <span><kbd>←</kbd><kbd>→</kbd> change lane</span>
-            <span><kbd>↑</kbd> or <kbd>Space</kbd> jump</span>
-            <span><kbd>↓</kbd> or <kbd>E</kbd> throw</span>
-            <span><kbd>Esc</kbd> pause</span>
-          </p>
-        </div>
-      </section>
-
-      <section class="section features-section" aria-labelledby="features-title">
-        <div class="wrap">
-          <div class="section-head">
-            <h2 id="features-title">What's inside</h2>
-            <p class="lead">A whole storybook to play, at home or on the go.</p>
-          </div>
-          <ul class="features">
-            <li class="card feature">
-              <span class="feature-icon" aria-hidden="true">
-                <svg viewBox="0 0 48 48" stroke="#4a3346" stroke-width="2" stroke-linejoin="round"><path d="M24 12c-5-3.4-11-4.2-17-3v28c6-1.2 12-.4 17 3 5-3.4 11-4.2 17-3V9c-6-1.2-12-.4-17 3z" fill="#fffaf0" /><path d="M24 12v28" /><path d="M12 16c3-.4 6 0 8 1M12 22c3-.4 6 0 8 1M28 17c2-1 5-1.4 8-1M28 23c2-1 5-1.4 8-1" stroke-opacity=".45" stroke-linecap="round" /><path d="M31 4v13l3-2.4 3 2.4V4z" fill="#c2405f" /></svg>
-              </span>
-              <h3>12 chapters</h3>
-              <p>Each one opens with a letter from a client and brings something new, all the way to the Grand Ball. Then try the Endless Season.</p>
-            </li>
-            <li class="card feature">
-              <span class="feature-icon" aria-hidden="true">
-                <svg viewBox="0 0 48 48" stroke="#4a3346" stroke-width="2" stroke-linejoin="round"><path d="M18 6h12l-2 9h-8z" fill="#f7b5c4" /><path d="M20 15h8c1 6 4 9 8 13 3 3 4.4 8 5 14-11 3-23 3-34 0 .6-6 2-11 5-14 4-4 7-7 8-13z" fill="#fbe3ea" /><path d="M19 15h10" stroke="#c2405f" stroke-width="3" stroke-linecap="round" /><g fill="#ef7f9a" stroke="none"><circle cx="18" cy="30" r="2" /><circle cx="28" cy="27" r="2" /><circle cx="24" cy="36" r="2" /><circle cx="34" cy="36" r="2" /><circle cx="13" cy="38" r="2" /></g></svg>
-              </span>
-              <h3>Gowns to unlock</h3>
-              <p>Earn tips from happy customers and dress Berla in eight lovely gowns.</p>
-            </li>
-            <li class="card feature">
-              <span class="feature-icon" aria-hidden="true">
-                <svg viewBox="0 0 48 48" stroke="#4a3346" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><rect x="6" y="9" width="36" height="32" rx="6" fill="#fffaf0" /><path d="M6 18h36" /><path d="M6 15a6 6 0 0 1 6-6h24a6 6 0 0 1 6 6v3H6z" fill="#b79ce0" /><path d="M15 5v8M33 5v8" /><path d="M24 22.5c1 3.4 2 4.4 5.4 5.4-3.4 1-4.4 2-5.4 5.4-1-3.4-2-4.4-5.4-5.4 3.4-1 4.4-2 5.4-5.4z" fill="#e8c062" stroke-width="1.6" /></svg>
-              </span>
-              <h3>A daily run</h3>
-              <p>A new route every day. Come back tomorrow and beat your best.</p>
-            </li>
-            <li class="card feature">
-              <span class="feature-icon" aria-hidden="true">
-                <svg viewBox="0 0 48 48" stroke="#4a3346" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><rect x="13" y="4" width="22" height="40" rx="5" fill="#fffaf0" /><path d="M20 39h8" /><path d="M24 15c2.6 0 5 1 6.8 2.6M24 15c-2.6 0-5 1-6.8 2.6M24 20.4c1.2 0 2.4.5 3.2 1.2M24 20.4c-1.2 0-2.4.5-3.2 1.2" stroke="#7fb069" stroke-width="2.4" /><circle cx="24" cy="26" r="2" fill="#7fb069" stroke="none" /><path d="M9 9l30 30" stroke="#c2405f" stroke-width="3" /></svg>
-              </span>
-              <h3>Works offline</h3>
-              <p>Add it to your home screen and play on the train. No signal needed.</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section final" aria-labelledby="final-title">
-        <div class="wrap">
-          <div class="cover">
-            <h2 id="final-title" class="cover-title">Ready to run?</h2>
-            <p>The tea is brewed and the customers are waving.</p>
-            <div class="cta">
-              <a class="btn btn-rose" href="./play/">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.4 4.8v14.4a1.4 1.4 0 0 0 2.2 1.2l10.8-7.2a1.4 1.4 0 0 0 0-2.4L9.6 3.6a1.4 1.4 0 0 0-2.2 1.2z" /></svg>
-                Play now
-              </a>
-              <button class="btn btn-cream" type="button" data-get-app>
-                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="3" fill="currentColor" fill-opacity=".12" /><path d="M12 7v7m-3-3 3 3 3-3M10 18.4h4" /></svg>
-                Get the app
-              </button>
-            </div>
-          </div>
+              <p class="rings">
+                <span class="ring is-gold" aria-hidden="true"></span>A gold ring means you can reach them.
+                <span class="ring is-green" aria-hidden="true"></span>Green means a Perfect throw.
+              </p>
+            </figcaption>
+          </figure>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="wrap footer-inner">
-        <p class="footer-name">Dockside Dash</p>
-        <p>Every model, tune and sound is made in code for this game.</p>
-        <p>No ads and no tracking. Your progress stays on your device.</p>
-        <nav class="footer-links" aria-label="Footer">
-          <a href="./play/">Play now</a>
-          <button type="button" class="link-btn" data-get-app>Get the app</button>
-        </nav>
+    <footer class="back">
+      <div class="back-frame">
+        <p class="back-title">Dockside Dash</p>
+        <p class="back-text">
+          Every model, tune and sound in this book is made in code. No ads and no tracking: your progress stays on your
+          device.
+        </p>
+        <div class="actions">
+          <a class="btn btn-foil" href="./play/">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M7.4 4.8v14.4a1.4 1.4 0 0 0 2.2 1.2l10.8-7.2a1.4 1.4 0 0 0 0-2.4L9.6 3.6a1.4 1.4 0 0 0-2.2 1.2z"
+              />
+            </svg>
+            Play now
+          </a>
+          <button class="btn btn-paper" type="button" data-get-app>
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.9"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="6.5" y="2.5" width="11" height="19" rx="2.4" fill="currentColor" fill-opacity=".14" />
+              <path d="M10.5 18.5h3" />
+              <path d="M12 7.2v6M9.6 11l2.4 2.4 2.4-2.4" />
+            </svg>
+            <span class="btn-label">Get the app</span>
+          </button>
+        </div>
       </div>
     </footer>
 
     <dialog class="sheet" id="app-sheet" aria-labelledby="sheet-title">
       <form method="dialog" class="sheet-card">
         <button class="sheet-close" value="close" aria-label="Close">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11" /></svg>
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.4"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M6.5 6.5l11 11M17.5 6.5l-11 11" />
+          </svg>
         </button>
 
         <div class="panel" data-panel="ios" hidden>
           <h2 class="sheet-title">Add it to your Home Screen</h2>
-          <p class="sheet-lead">Dockside Dash then opens like an app, full screen, and works offline.</p>
-          <ol class="steps">
-            <li>
-              <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#2f7cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9H6.5A1.5 1.5 0 0 0 5 10.5v9A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 17.5 9H16" /><path d="M12 14V3M8.5 6.5 12 3l3.5 3.5" /></svg></span>
-              <span>Tap the <b>Share</b> button in Safari.</span>
-            </li>
-            <li>
-              <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#4a3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="4" /><path d="M12 8.5v7M8.5 12h7" /></svg></span>
-              <span>Scroll down and tap <b>Add to Home Screen</b>.</span>
-            </li>
-            <li>
-              <img class="step-icon step-app" src="./icons/icon-192.png" width="44" height="44" alt="" />
-              <span>Tap <b>Add</b>. Then open Dockside Dash from your Home Screen.</span>
-            </li>
-          </ol>
-          <p class="sheet-small">On iPhone, Share is at the bottom of the screen. On iPad, it is at the top.</p>
-        </div>
-
-        <div class="panel" data-panel="android" hidden>
-          <h2 class="sheet-title">Install from your browser</h2>
-          <p class="sheet-lead">Dockside Dash then opens like an app, full screen, and works offline.</p>
-          <ol class="steps">
-            <li>
-              <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#4a3346"><circle cx="12" cy="5" r="2" /><circle cx="12" cy="12" r="2" /><circle cx="12" cy="19" r="2" /></svg></span>
-              <span>Tap the <b>menu</b> button at the top right.</span>
-            </li>
-            <li>
-              <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#4a3346" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="3" /><path d="M12 7v7m-3-3 3 3 3-3" /></svg></span>
-              <span>Tap <b>Install app</b> or <b>Add to Home screen</b>.</span>
-            </li>
-            <li>
-              <img class="step-icon step-app" src="./icons/icon-192.png" width="44" height="44" alt="" />
-              <span>Tap <b>Install</b>. Then open Dockside Dash from your home screen.</span>
-            </li>
-          </ol>
+          <p class="sheet-lead">
+            Tap
+            <span class="nowrap"
+              ><b>Share</b>
+              <span class="glyph" aria-hidden="true"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#2f7cf6"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M8 9H6.5A1.5 1.5 0 0 0 5 10.5v9A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 17.5 9H16"
+                  />
+                  <path d="M12 14V3M8.5 6.5 12 3l3.5 3.5" /></svg></span></span
+            >, then
+            <span class="nowrap"
+              ><b>Add to Home Screen</b>
+              <span class="glyph" aria-hidden="true"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#3d2a3a"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="4" y="4" width="16" height="16" rx="4" />
+                  <path d="M12 8.5v7M8.5 12h7" /></svg></span></span
+            >.
+          </p>
+          <p class="sheet-small">
+            On newer iPhones, Share is in the <b>•••</b> menu. Apple only lets web apps install this way.
+          </p>
         </div>
 
         <div class="panel" data-panel="desktop" hidden>
           <h2 class="sheet-title">Open on your phone</h2>
-          <p class="sheet-lead">Point your phone's camera at the code. Then tap <b>Get the app</b> on your phone to add it to your home screen.</p>
-          <img class="qr" src="./icons/qr.png" width="512" height="512" alt="QR code that opens the Dockside Dash website." />
+          <p class="sheet-small">Point your phone's camera at the code, then tap <b>Get the app</b>.</p>
+          <img
+            class="qr"
+            src="./icons/qr.png"
+            width="512"
+            height="512"
+            alt="QR code that opens the Dockside Dash website."
+          />
           <div class="sheet-actions">
-            <button type="button" class="btn btn-cream btn-small" data-install-here hidden>Install on this computer</button>
-            <a class="btn btn-rose btn-small" href="./play/">Play here instead</a>
-          </div>
-        </div>
-
-        <div class="panel" data-panel="installed" hidden>
-          <h2 class="sheet-title">You have the app!</h2>
-          <p class="sheet-lead">Open Dockside Dash from your home screen, or keep playing here.</p>
-          <div class="sheet-actions">
-            <a class="btn btn-rose btn-small" href="./play/">Play now</a>
+            <button type="button" class="btn" data-install-here hidden>Install on this computer</button>
+            <a class="btn btn-accent" href="./play/">Play here instead</a>
           </div>
         </div>
       </form>
