@@ -2,23 +2,22 @@
 // first visit. The build fills in VERSION and PRECACHE (see vite.config.ts); on the dev server it is never started.
 
 /** Changes with every build that changes a file, so old caches get dropped. */
-const VERSION = 'f9fb8a195d4d';
+const VERSION = '9705c9beb754';
 
 /** Files stored when the worker installs, as URLs relative to this file. */
 const PRECACHE = [
-  "assets/install-8rvC0voH.js",
-  "assets/install-wOrKMShS.css",
-  "assets/nunito-latin-600-normal-Br8yIETf.woff2",
-  "assets/nunito-latin-700-normal-Dort48En.woff2",
-  "assets/nunito-latin-800-normal-Dz8SOQK_.woff2",
-  "assets/play-ClZMge9J.css",
-  "assets/play-U6hpPesv.js",
-  "assets/playfair-display-latin-400-normal-CFtfchNt.woff2",
-  "assets/playfair-display-latin-700-italic-CB566L-e.woff2",
-  "assets/playfair-display-latin-700-normal-CuDiGg7c.woff2",
-  "assets/playfair-display-latin-800-normal-lwhkvH_6.woff2",
-  "assets/site-4f3HWHuQ.js",
-  "assets/site-BG2H0o1_.css",
+  "assets/alegreya-sans-latin-500-normal-DqiCFOjO.woff2",
+  "assets/alegreya-sans-latin-700-normal-wtMREkJN.woff2",
+  "assets/alegreya-sans-latin-800-normal-CI0VNay8.woff2",
+  "assets/alegreya-sans-latin-900-normal-BKi5JZT6.woff2",
+  "assets/bodoni-moda-latin-400-900-italic-BWd_eEHI.woff2",
+  "assets/bodoni-moda-latin-400-900-normal-BcMkp_wc.woff2",
+  "assets/install-B6sSqFVZ.css",
+  "assets/install-CaSp9xtx.js",
+  "assets/play-BsigiFJd.css",
+  "assets/play-DTWUHVnE.js",
+  "assets/site-DLNaMX36.js",
+  "assets/site-d1Ty-s1s.css",
   "icons/apple-touch-icon.png",
   "icons/favicon-32.png",
   "icons/favicon.svg",
