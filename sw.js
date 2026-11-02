@@ -2,7 +2,7 @@
 // first visit. The build fills in VERSION and PRECACHE (see vite.config.ts); on the dev server it is never started.
 
 /** Changes with every build that changes a file, so old caches get dropped. */
-const VERSION = '0a7ab8985d2d';
+const VERSION = 'bcd667ab388f';
 
 /** Files stored when the worker installs, as URLs relative to this file. */
 const PRECACHE = [
@@ -10,14 +10,13 @@ const PRECACHE = [
   "assets/alegreya-sans-latin-700-normal-wtMREkJN.woff2",
   "assets/alegreya-sans-latin-800-normal-CI0VNay8.woff2",
   "assets/alegreya-sans-latin-900-normal-BKi5JZT6.woff2",
+  "assets/audio-CI6hQZ1s.js",
   "assets/bodoni-moda-latin-400-900-italic-BWd_eEHI.woff2",
   "assets/bodoni-moda-latin-400-900-normal-BcMkp_wc.woff2",
   "assets/install-B6sSqFVZ.css",
   "assets/install-CaSp9xtx.js",
-  "assets/play-BlSQJnUQ.js",
-  "assets/play-C15L2Vfb.css",
-  "assets/site-DLNaMX36.js",
-  "assets/site-d1Ty-s1s.css",
+  "assets/play-CZo6Z1U5.css",
+  "assets/play-DKjxqHcR.js",
   "icons/apple-touch-icon.png",
   "icons/favicon-32.png",
   "icons/favicon.svg",
@@ -25,7 +24,6 @@ const PRECACHE = [
   "icons/icon-512.png",
   "icons/icon-maskable-512.png",
   "icons/qr.png",
-  "./",
   "manifest.webmanifest",
   "play/"
 ];
@@ -44,6 +42,11 @@ const STATIC_DIRS = ['assets/', 'icons/', 'shots/'];
 
 /** How long a page request may wait for the network before a stored copy is used instead. */
 const PAGE_TIMEOUT_MS = 4000;
+
+/** True for built files whose names carry a hash of their content (everything in assets/): they never change. */
+function isHashed(path) {
+  return path.startsWith('assets/');
+}
 
 /** Turns a URL relative to this worker into a full URL. */
 function full(path) {
@@ -68,11 +71,27 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     caches
       .open(CORE)
-      // "reload" skips the browser's HTTP cache, so the pages stored here are the ones from this build.
-      .then((cache) => cache.addAll(PRECACHE.map((path) => new Request(full(path), { cache: 'reload' }))))
+      .then(storeAll)
       .then(() => self.skipWaiting()),
   );
 });
+
+/**
+ * Stores every PRECACHE file in `cache`. A hashed file never changes, so a copy an older version stored is used
+ * as it is, and otherwise the browser's HTTP cache may answer (the page has often just loaded it). Pages, the
+ * manifest and icons keep their names between versions, so "reload" skips the HTTP cache to store this build's
+ * copies. Any failure fails the install, and the old version stays in charge.
+ */
+function storeAll(cache) {
+  return Promise.all(
+    PRECACHE.map(async (path) => {
+      const url = full(path);
+      if (!isHashed(path)) return cache.add(new Request(url, { cache: 'reload' }));
+      const kept = await caches.match(url, { ignoreVary: true });
+      return kept ? cache.put(url, kept) : cache.add(url);
+    }),
+  );
+}
 
 self.addEventListener('activate', (event) => {
   event.waitUntil(
