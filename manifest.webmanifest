@@ -1,7 +1,7 @@
 {
   "id": "./play/",
-  "name": "Dockside Dash",
-  "short_name": "Dockside",
+  "name": "Princess Berla",
+  "short_name": "Berla",
   "description": "A pop-up storybook runner. Help Berla run fresh matcha through a royal park and toss a cup to everyone who waves.",
   "lang": "en",
   "start_url": "./play/",
