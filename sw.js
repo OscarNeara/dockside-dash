@@ -2,7 +2,7 @@
 // first visit. The build fills in VERSION and PRECACHE (see vite.config.ts); on the dev server it is never started.
 
 /** Changes with every build that changes a file, so old caches get dropped. */
-const VERSION = '39fba2caae17';
+const VERSION = '570544ff69d4';
 
 /** Files stored when the worker installs, as URLs relative to this file. */
 const PRECACHE = [
@@ -10,11 +10,12 @@ const PRECACHE = [
   "assets/alegreya-sans-latin-700-normal-wtMREkJN.woff2",
   "assets/alegreya-sans-latin-800-normal-CI0VNay8.woff2",
   "assets/alegreya-sans-latin-900-normal-BKi5JZT6.woff2",
-  "assets/audio-VxDnGoJd.js",
+  "assets/audio-BhWfMz8e.js",
   "assets/bodoni-moda-latin-400-900-italic-BWd_eEHI.woff2",
   "assets/bodoni-moda-latin-400-900-normal-BcMkp_wc.woff2",
-  "assets/play-BkmmmnEf.css",
-  "assets/play-DaUmBECE.js",
+  "assets/browser-CSc8CImE.js",
+  "assets/play-BRfhvnin.css",
+  "assets/play-CRsVJ61e.js",
   "icons/apple-touch-icon.png",
   "icons/favicon-32.png",
   "icons/favicon.svg",
